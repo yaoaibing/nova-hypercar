@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>NOVA HYPERCAR · 超级跑车科技展厅</title>
+    <meta name="description" content="可交互超级跑车科技展厅：17 部件拆解、四场景、赛博雨夜高速驾驶" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="stage"></canvas>
+
+      <div id="boot" class="boot">
+        <div class="boot-inner">
+          <div class="boot-logo">NOVA</div>
+          <div class="boot-bar"><i></i></div>
+          <div class="boot-tip">正在装配车辆与展厅…</div>
+        </div>
+      </div>
+
+      <header id="topbar" class="topbar">
+        <div class="brand">
+          <span class="brand-mark">NOVA</span>
+          <span class="brand-sub">HYPERCAR&nbsp;·&nbsp;科技展厅</span>
+        </div>
+        <div class="topbar-right">
+          <span id="fps" class="fps">-- FPS</span>
+          <span id="ver" class="ver">v2.1</span>
+        </div>
+      </header>
+
+      <aside id="panel-left" class="panel panel-left"></aside>
+      <aside id="panel-right" class="panel panel-right"></aside>
+
+      <div id="hud" class="hud hidden"></div>
+      <div id="toast" class="toast"></div>
+      <div id="info" class="info hidden"></div>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

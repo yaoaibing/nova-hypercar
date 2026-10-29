@@ -1,0 +1,11 @@
+# 依赖
+node_modules/
+.package-lock.json
+
+# 构建产物（dist 可提交，看部署需要；默认忽略）
+dist/
+
+# 验收脚本产物
+shots/out/
+shots/quick/
+shots/*.log
